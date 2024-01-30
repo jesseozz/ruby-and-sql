@@ -67,5 +67,5 @@ puts twitter["url"]
 
 # 7. delete a row
 
-apple.destroy
+twitter.destroy
 puts "There are #{Company.all.count} Companies"
