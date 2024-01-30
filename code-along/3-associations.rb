@@ -20,6 +20,13 @@ new_contact = Contact.new
     new_contact["company_id"] = apple["id"]
 new_contact.save
 
+steve_jobs = Contact.new
+    steve_jobs["first_name"] = "Steve"
+    steve_jobs["last_name"] = "Jobs"
+    steve_jobs["e-mail"] = "steve@apple.com"
+    steve_jobs["company_id"] = apple["id"]
+steve_jobs.save
+
 # 2. How many contacts work at Apple?
 
 apple_contacts = Contact.where({"company_id" => apple["id"]})
